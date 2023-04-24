@@ -1,0 +1,518 @@
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Common CSS */
+/* .font-EvilEmpire {
+    font-family: "Metal Mania", cursive;
+} */
+
+:root {
+    --green: #27e124;
+    --dark-green: #002007;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    /* scroll-behavior: smooth !important; */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    /* scroll-behavior: smooth; */
+}
+
+.green-text {
+    color: var(--green);
+}
+
+.text-green-shadow {
+    text-shadow: 0px 4px 40px rgba(38, 181, 87, 0.4);
+}
+
+.card {
+    background-color: var(--light-green);
+    border-radius: 20px;
+}
+
+.active-card {
+    background-color: var(--light-green-active);
+    border-radius: 20px;
+    border: 5px solid white;
+    position: relative;
+}
+
+@layer base {
+    @font-face {
+        font-family: "Evil Empire";
+        src: url("/fonts/evil-empire.woff2") format("woff2");
+        font-weight: 400;
+        font-display: "swap";
+        font-style: normal;
+    }
+}
+
+@layer components {
+    .custom-container {
+        @apply p-14 md:p-20 lg:p-16 xl:p-20 mx-auto;
+    }
+
+    .custom-container-x {
+        @apply px-14 md:px-20 lg:px-16 xl:px-20 mx-auto;
+    }
+
+    .custom-container-y {
+        @apply py-14 md:py-20 lg:p-16 xl:py-20 mx-auto;
+    }
+
+    .heading-1 {
+        @apply text-4xl md:text-6xl lg:text-7xl;
+    }
+
+    .heading-2 {
+        @apply text-3xl md:text-4xl lg:text-5xl;
+    }
+
+    .heading-3 {
+        @apply text-xl md:text-2xl lg:text-xl xl:text-3xl;
+    }
+
+    .text {
+        @apply text-base lg:text-sm xl:text-base text-white;
+    }
+
+    .zoom-in-animation {
+        @apply hover:scale-105 transition duration-500 ease-in-out cursor-pointer;
+    }
+}
+
+/* Loading Screen */
+.loading-screen {
+    height: 100vh;
+    background: #111;
+    z-index: 30;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.wrapper {
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.loader {
+    height: 100%;
+    display: flex;
+    transform: translateZ(0);
+}
+.loader div {
+    flex: 1;
+    background: var(--green);
+    animation: go 0.8s infinite alternate ease;
+    box-shadow: 0 0 20px var(--green);
+}
+.loader div:nth-child(1) {
+    animation-delay: -0.72s;
+}
+.loader div:nth-child(2) {
+    animation-delay: -0.64s;
+}
+.loader div:nth-child(3) {
+    animation-delay: -0.56s;
+}
+.loader div:nth-child(4) {
+    animation-delay: -0.48s;
+}
+.loader div:nth-child(5) {
+    animation-delay: -0.4s;
+}
+.loader div:nth-child(6) {
+    animation-delay: -0.32s;
+}
+.loader div:nth-child(7) {
+    animation-delay: -0.24s;
+}
+.loader div:nth-child(8) {
+    animation-delay: -0.16s;
+}
+.loader div:nth-child(9) {
+    animation-delay: -0.08s;
+}
+.loader div:nth-child(10) {
+    animation-delay: 0s;
+}
+
+@keyframes go {
+    100% {
+        background: transparent;
+        flex: 10;
+        box-shadow: 0 0 0 transparent;
+    }
+}
+
+/* Header Section */
+.header-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/header-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: var(--dark-green);
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--dark-green);
+}
+
+.hero-section-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-container iframe {
+        height: 56.25vw;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .video-container iframe {
+        width: 177.78vh;
+    }
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: var(--dark-green);
+    background-image: url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/welcome-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Play And Earn Section */
+.play-and-earn-section {
+    background-color: var(--dark-green);
+    background-image: url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/play-and-earn-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.play-and-earn-card-1 {
+    background: linear-gradient(173.21deg, #27d9b0 -1.37%, #1323c4 94.68%);
+}
+
+.play-and-earn-card-2 {
+    background: linear-gradient(180deg, #1b8b7a 0%, #7db029 100%);
+}
+
+.play-and-earn-card-3 {
+    background: linear-gradient(180deg, #e4c786 0%, #bb275c 100%);
+}
+
+/* Car Race Section */
+.car-race-section {
+    background-color: var(--dark-green);
+    background-image: url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/car-race-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.car-race-card-1 {
+    background: linear-gradient(180deg, #d8bfd1 0%, #2b0651 100%);
+}
+
+.car-race-card-2 {
+    background: linear-gradient(180deg, #dcd933 0%, #0a6a5c 82.29%);
+}
+
+.car-race-card-3 {
+    background: linear-gradient(180deg, #ffd6db 0%, #a9505b 100%);
+}
+
+.car-race-card-4 {
+    background: linear-gradient(180deg, #e4c986 0%, #b92128 100%);
+}
+
+.car-race-card-5 {
+    background: linear-gradient(360deg, #9ba425 0%, #81e7d4 100%);
+}
+
+/* Icon Section */
+.icon-section {
+    background-color: var(--dark-green);
+    background-image: url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/icon-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Count Down Section */
+.count-down-section {
+    background-color: var(--dark-green);
+    background-image: url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/count-down-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.token-sell-meter-container {
+    border: 1px solid #27e124;
+    filter: drop-shadow(0px 0px 5px #25de38);
+    border-radius: 20px;
+}
+
+.token-sell-meter {
+    padding: 20px;
+    background-color: var(--green);
+    border-radius: 20px;
+}
+
+.token-sell-ends-count {
+    border: 1px solid #27e124;
+    filter: drop-shadow(0px 0px 10px #25de38);
+    border-radius: 20px;
+}
+
+.token-sell-ends-count > p {
+    letter-spacing: 1.1em;
+}
+
+/* Carbon Credit Section */
+.carbon-credit-section {
+    background-color: var(--dark-green);
+    background-image: url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/carbon-credit-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Combat Game Section */
+.combat-game-section {
+    background-color: var(--dark-green);
+    background-image: url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/combat-game-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.combat-game-icon-container {
+    border: 1px solid var(--green);
+    border-radius: 20px;
+}
+
+/* White Paper Section */
+.white-paper-section {
+    background-color: var(--dark-green);
+    background-image: url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/white-paper-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Why Choose Us Section */
+.why-choose-us-section {
+    background-color: var(--dark-green);
+    background-image: url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/why-choose-us-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.why-choose-us-card-1 {
+    background: rgba(119, 49, 224, 0.1);
+    border: 3px solid rgba(218, 29, 229, 0.5);
+    box-shadow: 0px 0px 25px rgba(135, 30, 142, 0.6);
+    border-radius: 45% / 12%;
+}
+
+.why-choose-us-card-1:hover {
+    border: 3px solid rgba(218, 29, 229, 1);
+}
+
+.why-choose-us-card-2 {
+    background: rgba(249, 82, 131, 0.1);
+    border: 3px solid rgba(196, 22, 43, 0.5);
+    box-shadow: 0px 0px 25px rgba(149, 21, 45, 0.6);
+    border-radius: 45% / 12%;
+}
+
+.why-choose-us-card-2:hover {
+    border: 3px solid rgba(196, 22, 43, 1);
+}
+
+.why-choose-us-card-3 {
+    background: rgba(177, 241, 88, 0.1);
+    border: 3px solid rgba(61, 172, 35, 0.5);
+    box-shadow: 0px 0px 25px rgba(53, 131, 39, 0.6);
+    border-radius: 20px;
+    border-radius: 45% / 12%;
+}
+
+.why-choose-us-card-3:hover {
+    border: 3px solid rgb(73, 207, 43);
+}
+
+.why-choose-us-card-4 {
+    background: rgba(97, 219, 247, 0.1);
+    border: 3px solid rgba(14, 76, 202, 0.5);
+    box-shadow: 0px 0px 25px rgba(6, 38, 159, 0.6);
+    border-radius: 20px;
+    border-radius: 45% / 12%;
+}
+
+.why-choose-us-card-4:hover {
+    border: 3px solid rgb(35, 106, 247);
+}
+
+/* Token Economic Section */
+.token-economic-section {
+    background-color: var(--dark-green);
+    background-image: url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/token-economic-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Token Distribution Section */
+.token-distribution-section {
+    background-color: var(--dark-green);
+    background-image: url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/token-distribution-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Road Map Section */
+.road-map-section {
+    background-color: var(--dark-green);
+    background-image: url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/road-map-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Wallet Section */
+.wallet-section {
+    background-color: var(--dark-green);
+    background-image: url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/wallet-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* hove coin flip style added */
+.flip-img:hover {
+    transform-style: preserve-3d;
+    transform: rotateY(360deg);
+    transition: 1s;
+}
+
+/* Certificate Section */
+.certificate-section {
+    background-color: black;
+}
+
+.certificate-video {
+    transform: scale(1);
+    transition: all 1s ease-in-out;
+}
+
+.certificate-video:hover {
+    transform: scale(1.5);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: var(--dark-green);
+    background-image: url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/contact-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.input-border {
+    border: 1px solid var(--green);
+}
+
+/* Buy Page CSS */
+.buy-page {
+    background-color: var(--dark-green);
+}
+
+.count-down-box {
+    background-color: var(--dark-green);
+    background-image: url("https://moonlit-snickerdoodle-f90af8.netlify.app/images/count-down-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid white;
+    overflow: hidden;
+    height: 80vh;
+}
+
+.scrolltop .icon {
+    font-size: 21px;
+    text-align: center;
+    transform: rotate(-45deg);
+    margin-top: 7px;
+    color: #fff;
+}
+.fa, .fa-brands, .fa-duotone, .fa-light, .fa-regular, .fa-solid, .fa-thin, .fab, .fad, .fal, .far, .fas, .fat {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display,inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+.scrolltop {
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #00c194 !important;
+    display: none;
+    z-index: 1;
+    cursor: pointer;
+}

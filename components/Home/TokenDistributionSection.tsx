@@ -13,10 +13,10 @@ const TokenDistributionSection = () => {
                     <span className="font-bold green-text">
                         Total Token Supply: 11, 11, 11, 111
                     </span>{" "}
-                    Tokens Total tokens Locked for 10 Years Token Released Every
+                    {/* Tokens Total tokens Locked for 10 Years Token Released Every
                     Day - 50% Tokens Locked for Metaverse, Gaming Rewards
                     Strategic Burn as Per White Paper Token Listing and Sale
-                    Prices
+                    Prices */}
                 </p>
 
                 <div>

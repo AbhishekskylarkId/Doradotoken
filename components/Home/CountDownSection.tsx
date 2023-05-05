@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 // For Count Down
 function calculateTimeLeft() {
     const year = new Date().getFullYear();
-    const difference = +new Date(`${year}-8-15`) - +new Date();
+    const difference = +new Date(`${year}-9-3`) - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -44,13 +44,12 @@ const CountDownSection = () => {
                         </h2>
 
                         <p className="text text-white text-justify pb-12 w-full lg:w-[60%]">
-                            Participate in Our Only Public Sale before we get
-                            listed on Exchanges and get Good Appreciation Value.
-                            The Public sale is very much Limited of only 0.5% of
-                            total Supply. You will never get an Oppertunity to
-                            Acquire Dorado Tokens at this Price .Very Limited
-                            Supply so "Hurry UP" for an Oppertunity never to be
-                            Missed
+                            Participate in our only IGO before Dorado Gaming Metavarse is launched
+                             and get Good Appreciation Value.
+                            The IGO is very much limited. You will never get an opportunity to
+                            acquire Dorado Tokens at this price. Very limited
+                            supply so "Hurry UP" for an opportunity never to be
+                            missed.
                         </p>
 
                         <div className="flex justify-center lg:justify-start">
@@ -73,17 +72,23 @@ const CountDownSection = () => {
                     </div>
 
                     <div>
-                        <div className="text-center lg:text-right pb-10">
-                            <p className="text font-semibold green-text">
-                                Total Token Supply: 11, 11, 11, 111
+                        <div className="text-center lg:text-right pb-10" style={{marginLeft: "37%"}}>
+                            <p className="text font-semibold " style={{textAlign:'left'}}>
+                            Total Supply - <span className="green-text">11,11,11,111</span> Tokens</p>
+                            <p className="text font-semibold " style={{textAlign:'left'}}>
+Total tokens <span className="green-text">Unlocks strategically for 10 Years</span></p>
+{/* <p className="text font-semibold " style={{textAlign:'inherit'}}>
+50% Tokens Locked for <span className="text" style={{color:'#ebea01'}}>Metaverse, Gaming Rewards</span></p> */}
+<p className="text font-semibold " style={{textAlign:'left'}}>
+Strategic Burn <span className="green-text">as Per White Paper</span>
                             </p>
 
-                            <p className="text green-text">
+                            {/* <p className="text green-text">
                                 Token For Website Sale: 55, 55, 555
-                            </p>
+                            </p> */}
 
-                            <p className="text">
-                                Public Sale Price: TBA Before IDO
+                            <p className="text font-semibold"  style={{textAlign:'left'}}>
+                                Public Sale Price: TBA Before IGO
                             </p>
                         </div>
 

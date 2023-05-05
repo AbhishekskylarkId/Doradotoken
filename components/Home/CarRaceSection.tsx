@@ -26,7 +26,7 @@ const CarRaceSection = () => {
                     <span className="font-bold green-text">
                         WIN BIG REWARDS
                     </span>{" "}
-                    daily
+                    daily.
                 </p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-4 xl:gap-16">
@@ -49,7 +49,7 @@ const CarRaceSection = () => {
                                 </h3>
 
                                 <p className="text text-center text-white">
-                                    Own your digital dream car
+                                   Collect the most rare NFT's and own your digital dream car.
                                 </p>
                             </div>
                         </div>
@@ -74,8 +74,8 @@ const CarRaceSection = () => {
                                 </h3>
 
                                 <p className="text text-center text-white">
-                                    complete for the top places in action-packed
-                                    races
+                                    Compete for the top ranks in action packed
+                                    races.
                                 </p>
                             </div>
                         </div>
@@ -100,7 +100,7 @@ const CarRaceSection = () => {
                                 </h3>
 
                                 <p className="text text-center text-white">
-                                    Race your way to victory & winning rewards!
+                                    Race your way to victory and win more Dorado Tokens as rewards.
                                 </p>
                             </div>
                         </div>
@@ -125,8 +125,8 @@ const CarRaceSection = () => {
                                 </h3>
 
                                 <p className="text text-center text-white">
-                                    Level up your car to boost its performance &
-                                    visuals!
+                                    Level up your car to boost its performance and
+                                    visuals.
                                 </p>
                             </div>
                         </div>
@@ -151,8 +151,8 @@ const CarRaceSection = () => {
                                 </h3>
 
                                 <p className="text text-center text-white">
-                                    Exlpore exciting options to trade your car
-                                    nfts!
+                                    Exlpore exciting options to trade your car and other
+                                    NFT's.
                                 </p>
                             </div>
                         </div>

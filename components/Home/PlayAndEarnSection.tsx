@@ -18,7 +18,7 @@ const PlayAndEarnSection = () => {
                 <p className="text text-white text-justify md:text-center pb-12 w-full lg:w-[50%] mx-auto">
                     You can purchase any car of your choice from the
                     marketplace. <br className="hidden lg:block" /> They come in
-                    varying engine capacity, traits and price tags
+                    varying engine capacity, traits and price tags.
                 </p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16">
@@ -36,16 +36,16 @@ const PlayAndEarnSection = () => {
                             />
 
                             <div>
-                                <h3 className="heading-3 font-EvilEmpire text-center text-white pb-2">
+                                <h3 className="heading-3 pp font-EvilEmpire text-center text-white pb-2">
                                     Rent to Earn
                                 </h3>
 
-                                <p className="text text-center text-white">
-                                    Renting NFTs can become an inseparable part
+                                <p className="text pp text-center text-white">
+                                    Renting NFT's can become an inseparable part
                                     of the DeFi and GameFi industries by solving
                                     the issue of high entry barriers and costly
-                                    transaction fees. You can Rent your NFTs to
-                                    Others who can’t afford to Buy the NFT’s
+                                    transaction fees. You can rent your NFTs to
+                                    others who can’t afford to Buy the NFT’s.
                                 </p>
                             </div>
                         </div>
@@ -66,19 +66,19 @@ const PlayAndEarnSection = () => {
                             />
 
                             <div>
-                                <h3 className="heading-3 font-EvilEmpire text-center text-white pb-2">
+                                <h3 className="heading-3 font-EvilEmpire pp text-center text-white pb-2">
                                     Collect to Earn
                                 </h3>
 
-                                <p className="text text-center text-white">
-                                    With the blockchain, gamers can sell what
+                                <p className="text text-center pp text-white">
+                                    In the blockchain space, players can sell what
                                     they manage to collect in the game, turning
                                     their video game spending into investing.
                                     While more and more gaming developers have
                                     begun to dabble in the NFT space, most
-                                    blockchain games in this generation are less
+                                    blockchain games in this generation are more
                                     interesting and fun than traditional video
-                                    games
+                                    games.
                                 </p>
                             </div>
                         </div>
@@ -101,19 +101,19 @@ const PlayAndEarnSection = () => {
                             />
 
                             <div>
-                                <h3 className="heading-3 font-EvilEmpire text-center text-white pb-2">
+                                <h3 className="heading-3 font-EvilEmpire text-center pp text-white pb-2">
                                     Scholarship Model
                                 </h3>
 
-                                <p className="text text-center text-white">
-                                    A scholarship is a popular pathway to
-                                    onboard newcomers to NFT games. Dorado
+                                <p className="text text-center text-white pp">
+                                    Scholarship model is a popular pathway to
+                                    onboard newcomers to NFT games. Dorado Metavarse
                                     provides scholarships to new players as a
-                                    rewards-sharing model, where the Players
-                                    acquires NFT assets and rents them to new
+                                    rewards-sharing model, where the players
+                                    acquires NFT assets and shares them to new
                                     players so they can start playing and
                                     earning in-game tokens without spending any
-                                    money
+                                    money.
                                 </p>
                             </div>
                         </div>

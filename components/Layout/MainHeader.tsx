@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Link as Scroll } from "react-scroll/modules";
 
-const Header = () => {
+const MainHeader = () => {
     const [showNav, setShowNav] = useState(false);
     const [active, setActive] = useState("HOME");
 
@@ -35,11 +35,8 @@ const Header = () => {
                         <div className="lg:mr-3 xl:mr-8">
                             <Link
                                 href="/"
-                                className={`text-lg font-EvilEmpire text-center text-white ${
-                                    active === "HOME" &&
-                                    "underline underline-offset-4 decoration-4"
-                                }`}
-                                onClick={() => handleActive("HOME")}
+                                className={`text-lg font-EvilEmpire text-center text-white `}
+                                // onClick={() => handleActive("HOME")}
                             >
                                 HOME
                             </Link>
@@ -47,78 +44,53 @@ const Header = () => {
 
                         <div className="lg:mr-3 xl:mr-8">
                             <Link
-                                href="/#welcome-section"
-                                className={`text-lg font-EvilEmpire text-center text-white ${
-                                    active === "ABOUT" &&
-                                    "underline underline-offset-4 decoration-4"
-                                }`}
-                                onClick={() => handleActive("ABOUT")}
+                                href="/About"
+                                className={`text-lg font-EvilEmpire text-center text-white `}
+                                // onClick={() => handleActive("ABOUT")}
                             >
-                                <Scroll
-                                    activeClass="active"
-                                    to="welcome-section"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={0}
-                                    duration={500}
-                                >
                                     ABOUT
-                                </Scroll>
+                                
                             </Link>
                         </div>
 
                         <div className="lg:mr-3 xl:mr-8">
                             <Link
-                                href="/#why-choose-us-section"
+                                href="/Featurs"
                                 className={`text-lg font-EvilEmpire text-center text-white ${
                                     active === "FEATURES" &&
                                     "underline underline-offset-4 decoration-4"
                                 }`}
-                                onClick={() => handleActive("FEATURES")}
+                                
                             >
-                                <Scroll
-                                    activeClass="active"
-                                    to="why-choose-us-section"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={0}
-                                    duration={1000}
-                                >
+                               
                                     FEATURES
-                                </Scroll>
+                               
                             </Link>
                         </div>
 
                         <div className="lg:mr-3 xl:mr-8">
                             <Link
-                                href="/#road-map-section"
+                                href="/Roadmap"
                                 className={`text-lg font-EvilEmpire text-center text-white ${
                                     active === "ROADMAP" &&
                                     "underline underline-offset-4 decoration-4"
                                 }`}
-                                onClick={() => handleActive("ROADMAP")}
+                                // onClick={() => handleActive("ROADMAP")}
                             >
-                                <Scroll
-                                    activeClass="active"
-                                    to="road-map-section"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={0}
-                                    duration={1300}
-                                >
+                               
                                     ROADMAP
-                                </Scroll>
+                               
                             </Link>
                         </div>
 
                         <div className="lg:mr-3 xl:mr-8">
                             <Link
-                                href="/buy"
+                                href="#"
                                 className={`text-lg font-EvilEmpire text-center text-white ${
                                     active === "STAKE" &&
                                     "underline underline-offset-4 decoration-4"
                                 }`}
-                                onClick={() => handleActive("STAKE")}
+                                // onClick={() => handleActive("STAKE")}
                             >
                                 STAKE
                             </Link>
@@ -126,44 +98,30 @@ const Header = () => {
 
                         <div className="lg:mr-3 xl:mr-8">
                             <Link
-                                href="/#play-and-earn-section"
+                                href="/Play"
                                 className={`text-lg font-EvilEmpire text-center text-white ${
                                     active === "PLAY" &&
                                     "underline underline-offset-4 decoration-4"
                                 }`}
-                                onClick={() => handleActive("PLAY")}
+                                // onClick={() => handleActive("PLAY")}
                             >
-                                <Scroll
-                                    activeClass="active"
-                                    to="play-and-earn-section"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={0}
-                                    duration={500}
-                                >
+                                
                                     PLAY
-                                </Scroll>
+                              
                             </Link>
                         </div>
 
                         <div>
                             <Link
-                                href="/#wallet-section"
+                                href="#"
                                 className={`text-lg font-EvilEmpire text-center text-yellow-300 ${
                                     active === "Wallet Connect" && ""
                                 }`}
-                                onClick={() => handleActive("Wallet Connect")}
+                                // onClick={() => handleActive("Wallet Connect")}
                             >
-                                <Scroll
-                                    activeClass="active"
-                                    to="wallet-section"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={0}
-                                    duration={1500}
-                                >
+                               
                                     Wallet Connect
-                                </Scroll>
+                               
                             </Link>
                         </div>
                     </div>
@@ -227,9 +185,7 @@ const Header = () => {
                                 <li>
                                     <Link
                                         href="/"
-                                        className={`block py-2 pl-3 pr-4 text-white rounded ${
-                                            active === "HOME" && "bg-[#27e124]"
-                                        }`}
+                                        className={`block py-2 pl-3 pr-4 text-white rounded `}
                                     >
                                         Home
                                     </Link>
@@ -237,71 +193,46 @@ const Header = () => {
 
                                 <li>
                                     <Link
-                                        href="/#welcome-section"
-                                        className={`block py-2 pl-3 pr-4 text-gray-700 rounded ${
-                                            active === "ABOUT" && "bg-[#27e124]"
-                                        }`}
+                                        href="/About"
+                                        className={`block py-2 pl-3 pr-4 text-gray-700 rounded `}
                                     >
-                                        <Scroll
-                                            activeClass="active"
-                                            to="welcome-section"
-                                            spy={true}
-                                            smooth={true}
-                                            offset={0}
-                                            duration={500}
-                                        >
+                                       
                                             About
-                                        </Scroll>
+                                       
                                     </Link>
                                 </li>
 
                                 <li>
                                     <Link
-                                        href="/#why-choose-us-section"
+                                        href="/Featurs"
                                         className={`block py-2 pl-3 pr-4 text-gray-700 rounded ${
                                             active === "FEATURES" &&
                                             "bg-[#27e124]"
                                         }`}
                                     >
-                                        <Scroll
-                                            activeClass="active"
-                                            to="why-choose-us-section"
-                                            spy={true}
-                                            smooth={true}
-                                            offset={0}
-                                            duration={1000}
-                                        >
-                                            {/* FEATURES */}
+                                       
                                             Features
-                                        </Scroll>
+                                       
                                     </Link>
                                 </li>
 
                                 <li>
                                     <Link
-                                        href="/#road-map-section"
+                                        href="/Roadmap"
                                         className={`block py-2 pl-3 pr-4 text-gray-700 rounded ${
                                             active === "ROADMAP" &&
                                             "bg-[#27e124]"
                                         }`}
                                     >
-                                        <Scroll
-                                            activeClass="active"
-                                            to="road-map-section"
-                                            spy={true}
-                                            smooth={true}
-                                            offset={0}
-                                            duration={1300}
-                                        >
-                                            {/* ROADMAP */}
+                                      
                                             Roadmap
-                                        </Scroll>
+                                        
                                     </Link>
                                 </li>
 
                                 <li>
                                     <Link
-                                        href="/buy"
+                                        href="#"
                                         className={`block py-2 pl-3 pr-4 text-gray-700 rounded ${
                                             active === "STAKE" && "bg-[#27e124]"
                                         }`}
@@ -312,43 +243,28 @@ const Header = () => {
 
                                 <li>
                                     <Link
-                                        href="/#play-and-earn-section"
+                                        href="/Play"
                                         className={`block py-2 pl-3 pr-4 text-gray-700 rounded ${
                                             active === "PLAY" && "bg-[#27e124]"
                                         }`}
                                     >
-                                        <Scroll
-                                            activeClass="active"
-                                            to="play-and-earn-section"
-                                            spy={true}
-                                            smooth={true}
-                                            offset={0}
-                                            duration={500}
-                                        >
-                                            {/* PLAY */}
+                                       
                                             Play
-                                        </Scroll>
+                                        
                                     </Link>
                                 </li>
 
                                 <li>
                                     <Link
-                                        href="/#wallet-section"
+                                        href="#"
                                         className={`block py-2 pl-3 pr-4 text-yellow-300 rounded ${
                                             active === "Wallet Connect" &&
                                             "bg-[#27e124]"
                                         }`}
                                     >
-                                        <Scroll
-                                            activeClass="active"
-                                            to="wallet-section"
-                                            spy={true}
-                                            smooth={true}
-                                            offset={0}
-                                            duration={1500}
-                                        >
+                                      
                                             Wallet Connect
-                                        </Scroll>
+                                        
                                     </Link>
                                 </li>
 
@@ -371,4 +287,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default MainHeader;

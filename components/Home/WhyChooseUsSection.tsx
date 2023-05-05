@@ -29,7 +29,7 @@ const WhyChooseUsSection = () => {
                                 We are developing agile and resourceful
                                 financial services and fund management with the
                                 help of a team of Al/ML researchers from
-                                prestigious institutions
+                                prestigious institutions.
                             </p>
                         </div>
                     </div>
@@ -47,9 +47,9 @@ const WhyChooseUsSection = () => {
                             </h3>
 
                             <p className="text text-center text-white">
-                                DSF is built on the BSC Blockchain, which is
+                                DRD Token is built on the BSC Blockchain, which is
                                 fast, low on gas, and has a rising number of
-                                validators, promising it to be firmer by the day
+                                validators, promising it to be firmer by the day.
                             </p>
                         </div>
                     </div>
@@ -67,10 +67,10 @@ const WhyChooseUsSection = () => {
                             </h3>
 
                             <p className="text text-center text-white">
-                                Our Al-backed Smart Contract, which is
-                                decentralized, will provide you control over the
-                                confidentiality of your data, investments, and
-                                costs. It is Innovative
+                                Our Al-backed Smart Contract which is
+                                decentralized will provide you control over the
+                                confidentiality of your data, investments and
+                                costs. It is Innovative.
                             </p>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ const WhyChooseUsSection = () => {
                             <p className="text text-center text-white">
                                 We use cutting edge technology and meld them
                                 revolutionary and innovative projects
-                                benefitting the community
+                                benefitting the community.
                             </p>
                         </div>
                     </div>

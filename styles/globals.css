@@ -516,3 +516,11 @@ iframe {
     z-index: 1;
     cursor: pointer;
 }
+
+.pp {
+    text-align: inherit;
+}
+
+.text-justify {
+    text-align: left;
+}

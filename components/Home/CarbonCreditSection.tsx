@@ -26,12 +26,12 @@ const CarbonCreditSection = () => {
                                     className={`${show ? "hidden" : "block"}`}
                                 >
                                     Dorado Token is a Bridge between Carbon
-                                    Credit combination of Web 3.0 (NFT) and
-                                    Environment enhancements to buy Carbon
-                                    Credits to ensure the transparency and
-                                    secure of every transaction that is
+                                    Credits NFT and
+                                    environment enhancements to buy Carbon
+                                    Credits. It ensures the transparency and
+                                    security of every transaction that is
                                     performed by every user resulting in
-                                    Sophistication of Planet Earth...{" "}
+                                    sophistication of Planet Earth...{" "}
                                 </span>
 
                                 {/* Full Text */}
@@ -44,9 +44,8 @@ const CarbonCreditSection = () => {
                                     Credits to ensure the transparency and
                                     secure of every transaction that is
                                     performed by every user resulting in
-                                    Sophistication of Planet Earth by making
-                                    more Eco Friendly and Developing the
-                                    Renewable energy
+                                    Sophistication of Planet Earth by making it
+                                    more Eco Friendly.
                                     <br /> <br />
                                     Using nonfungible tokens (NFTs) as carbon
                                     credits or carbon offsets reveals an outlet
@@ -62,9 +61,9 @@ const CarbonCreditSection = () => {
                                         Decentralized Finance (Defi)
                                     </span>{" "}
                                     markets. Most of this activity currently
-                                    takes place on the Binance blockchain as it
+                                    takes place on the <span className="font-semibold"> Binance Blockchain</span> as it
                                     has already offset its entire carbon
-                                    footprint
+                                    footprint.
                                 </span>
 
                                 <span

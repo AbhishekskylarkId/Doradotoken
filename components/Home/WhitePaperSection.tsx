@@ -24,41 +24,17 @@ const WhitePaperSection = () => {
                                 <span
                                     className={`${show ? "hidden" : "block"}`}
                                 >
-                                    A whitepaper is an authoritative report or
-                                    guide that informs readers concisely about a
-                                    complex issue and presents the issuing
-                                    body's philosophy on the matter. It is meant
-                                    to help readers understand an issue, solve a
-                                    problem, or make a decision. Brickken has
-                                    created this whitepaper to educate its
-                                    audience regarding Security Token Offerings,
-                                    its current situation...{" "}
+                                    A whitepaper is an authoritative report or guide that informs readers concisely about a complex issue and presents the issuing body's philosophy on the matter. It is meant to help readers understand an issue, solve a problem or make a decision. Dorado has created this whitepaper to educate its audience regarding Security Token Offerings, its current situation,...{" "}
                                 </span>
 
                                 {/* Full Text */}
                                 <span
                                     className={`${show ? "block" : "hidden"}`}
                                 >
-                                    A whitepaper is an authoritative report or
-                                    guide that informs readers concisely about a
-                                    complex issue and presents the issuing
-                                    body's philosophy on the matter. It is meant
-                                    to help readers understand an issue, solve a
-                                    problem, or make a decision. Brickken has
-                                    created this whitepaper to educate its
-                                    audience regarding Security Token Offerings,
-                                    its current situation, legality, and issues
-                                    that need to be tackled to allow companies
-                                    to self-crowdfund using Brickken's
-                                    technology and know-how, in a decentralized
-                                    ecosystem. This whitepaper embodies
-                                    Brickken's values and vision and provides a
-                                    theorical and practical approach as to how
-                                    it will scale the use of Security Token
-                                    Offerings, to make tokenization a viable
-                                    alternative financial instrument to be used
-                                    by companies, and mechanism for investors to
-                                    generate passive income
+                                    A whitepaper is an authoritative report or guide that informs readers concisely about a complex issue and presents the issuing body's philosophy on the matter. It is meant to help readers understand an issue, solve a problem or make a decision. Dorado has created this whitepaper to educate its audience regarding Security Token Offerings, its current situation, legality and issues that need to be tackled to allow companies to self or crowdfund using Dorado's technology and know how in a decentralized ecosystem and WEB 3.0 Metaverse Platform. 
+                                    <br />
+                                    <br />
+                                    This whitepaper embodies Dorado's values and vision and provides a theorical and practical approach as to how it will scale the use of Security Token Offerings to make tokenization a viable alternative financial instrument to be used by companies and mechanism for investors to generate passive income. This whitepaper embodies Dorado's values and vision and provides a theorical and practical approach as to how it will be implimented and scale the use of Dorado Token after its Initial Game Offering (IGO) for its Community and investors.
                                 </span>
 
                                 <span

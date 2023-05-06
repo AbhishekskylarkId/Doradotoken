@@ -528,7 +528,10 @@ iframe {
 
 @media(min-width:1025px){
     .dpp{
-        padding: 0px 102px;
+        padding: 0px 72px;
 
+    }
+    .lg\:mr-3 {
+        margin-right: 2rem;
     }
 }

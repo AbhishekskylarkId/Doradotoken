@@ -532,6 +532,6 @@ iframe {
 
     }
     .lg\:mr-3 {
-        margin-right: 2rem;
+        margin-right: 2rem !important;
     }
 }

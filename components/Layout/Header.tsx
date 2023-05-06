@@ -19,7 +19,7 @@ const Header = () => {
     return (
         <>
             {/* For Web */}
-            <div className="header-section py-3 lg:px-5 xl:px-10 hidden lg:block">
+            <div className="py-3 lg:px-5 xl:px-10 hidden lg:block">
                 <div className="flex items-center justify-between">
                     <div>
                         <Link href="/">
@@ -30,8 +30,8 @@ const Header = () => {
                             />
                         </Link>
                     </div>
-
-                    <div className="flex items-center justify-between">
+<div className="header-section"style={{display:'flex'}}>
+                    <div className="dpp flex items-center justify-between">
                         <div className="lg:mr-3 xl:mr-8">
                             <Link
                                 href="/"
@@ -176,6 +176,7 @@ const Header = () => {
                                 alt="image"
                             />
                         </Link>
+                    </div>
                     </div>
                 </div>
             </div>

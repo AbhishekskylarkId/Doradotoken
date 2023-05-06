@@ -171,6 +171,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 14px;
 }
 
 /* Footer Section */
@@ -523,4 +524,11 @@ iframe {
 
 .text-justify {
     text-align: left;
+}
+
+@media(min-width:1025px){
+    .dpp{
+        padding: 0px 132px;
+
+    }
 }

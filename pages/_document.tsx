@@ -5,17 +5,17 @@ export default function Document() {
         <Html>
             <Head>
                 {/* Google Font */}
-                {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link rel="preconnect" href="/images/favicon.png" />
+                <link rel="preconnect" href="/images/favicon.png" />
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap"
+                    href="/images/favicon.png"
                     rel="stylesheet"
-                ></link> */}
+                ></link>
 
                 {/* Favicon */}
                 <link
                     rel="icon"
-                    href="https://moonlit-snickerdoodle-f90af8.netlify.app/images//logo.svg"
+                    href="/images/favicon.png"
                 />
 
                 {/* Font Awesome */}
